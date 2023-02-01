@@ -1,6 +1,13 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
+
+  #Railsにdeviseをサクッと導入！認証機能の使い方も解説【日本語化】
+  #https://kitsune.blog/rails-devise
+  # 認証メール内URL（例１）
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded any time
